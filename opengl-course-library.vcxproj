@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -177,11 +177,29 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
   <ItemGroup>
     <ClCompile Include="include\glm\detail\glm.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\fmi\01-01-square\square-app.cpp" />
+    <ClCompile Include="src\fmi\01-01-square\square.cpp" />
+    <ClCompile Include="src\fmi\02-01-lines\LineApp.cpp" />
+    <ClCompile Include="src\fmi\02-01-lines\LineLoop..cpp" />
+    <ClCompile Include="src\fmi\02-01-lines\Lines.cpp" />
+    <ClCompile Include="src\fmi\02-01-lines\LineStrip.cpp" />
+    <ClCompile Include="src\fmi\02-01-lines\Points.cpp" />
+    <ClCompile Include="src\fmi\Shader.cpp" />
+    <ClCompile Include="src\fmi\Texture.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\imageloader.cpp" />
     <ClCompile Include="src\loadShaders.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\fmi\01-01-square\square-app.h" />
+    <ClInclude Include="include\fmi\01-01-square\square.h" />
+    <ClInclude Include="include\fmi\02-01-lines\LineApp.h" />
+    <ClInclude Include="include\fmi\02-01-lines\LineLoop.h" />
+    <ClInclude Include="include\fmi\02-01-lines\Lines.h" />
+    <ClInclude Include="include\fmi\02-01-lines\LineStrip.h" />
+    <ClInclude Include="include\fmi\02-01-lines\Points.h" />
+    <ClInclude Include="include\fmi\Shader.h" />
+    <ClInclude Include="include\fmi\Texture.h" />
     <ClInclude Include="include\glad\glad.h" />
     <ClInclude Include="include\GLFW\glfw3.h" />
     <ClInclude Include="include\GLFW\glfw3native.h" />
@@ -484,8 +502,10 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <Text Include="include\glm\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="example.frag" />
-    <None Include="example.vert" />
+    <None Include="shaders\02-01-lines\lines.frag" />
+    <None Include="shaders\02-01-lines\lines.vert" />
+    <None Include="square.frag" />
+    <None Include="square.vert" />
     <None Include="include\glm\detail\func_common.inl" />
     <None Include="include\glm\detail\func_common_simd.inl" />
     <None Include="include\glm\detail\func_exponential.inl" />
