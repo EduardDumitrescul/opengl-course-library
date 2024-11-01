@@ -24,10 +24,10 @@ Texture::Texture(std::string path)
 void Texture::use() {
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, id);
-    //glUniform1i(glGetUniformLocation(ProgramId, "myTexture"), 0);
+    //glUniform1i(glGetUniformLocation(id, "myTexture"), 0);
 }
 
 void Texture::freeResources()
 {
-    glDisableVertexAttribArray(2);
+    glDisableVertexAttribArray(id);
 }

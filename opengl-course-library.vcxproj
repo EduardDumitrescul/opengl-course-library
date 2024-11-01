@@ -189,6 +189,9 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <ClCompile Include="src\fmi\02-02-triangles\TriangleFan.cpp" />
     <ClCompile Include="src\fmi\02-02-triangles\Triangles.cpp" />
     <ClCompile Include="src\fmi\02-02-triangles\TriangleStrip.cpp" />
+    <ClCompile Include="src\fmi\04-01-texture\Quadrilater.cpp" />
+    <ClCompile Include="src\fmi\04-01-texture\TextureApp.cpp" />
+    <ClCompile Include="src\fmi\App.cpp" />
     <ClCompile Include="src\fmi\Shader.cpp" />
     <ClCompile Include="src\fmi\Texture.cpp" />
     <ClCompile Include="src\glad.c" />
@@ -208,6 +211,9 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <ClInclude Include="include\fmi\02-02-triangles\TriangleApp.h" />
     <ClInclude Include="include\fmi\02-02-triangles\TriangleFan.h" />
     <ClInclude Include="include\fmi\02-02-triangles\TriangleStrip.h" />
+    <ClInclude Include="include\fmi\04-01-texture\Quadrilater.h" />
+    <ClInclude Include="include\fmi\04-01-texture\TextureApp.h" />
+    <ClInclude Include="include\fmi\App.h" />
     <ClInclude Include="include\fmi\Shader.h" />
     <ClInclude Include="include\fmi\Texture.h" />
     <ClInclude Include="include\glad\glad.h" />
@@ -516,6 +522,8 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <None Include="shaders\02-01-lines\lines.vert" />
     <None Include="shaders\02-02-triangles\triangles.frag" />
     <None Include="shaders\02-02-triangles\triangles.vert" />
+    <None Include="shaders\04-01-texture\quadrilater.frag" />
+    <None Include="shaders\04-01-texture\quadrilater.vert" />
     <None Include="square.frag" />
     <None Include="square.vert" />
     <None Include="include\glm\detail\func_common.inl" />
@@ -674,6 +682,10 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <None Include="lib\x64\GL\glew32.dll" />
     <None Include="lib\x64\GL\glew32s.dll" />
     <None Include="lib\x64\SOIL\SOIL.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="textures\04-01-texture\checkerboard.jpg" />
+    <Image Include="textures\04-01-texture\player.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
