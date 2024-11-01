@@ -25,6 +25,7 @@ void LineApp::initialize()
 	shader = new Shader("shaders/02-01-lines/lines.vert", "shaders/02-01-lines/lines.frag");
 	points = new Points(shader);
 	lines = new Lines(shader);
+	lineLoop = new LineLoop(shader);
 }
 
 void LineApp::renderFunction()
@@ -33,6 +34,7 @@ void LineApp::renderFunction()
 
 	instance->points->render();
 	instance->lines->render();
+	instance->lineLoop->render();
 
 	glFlush();
 }

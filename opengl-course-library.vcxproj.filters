@@ -141,7 +141,7 @@
     <ClCompile Include="src\fmi\02-01-lines\LineApp.cpp">
       <Filter>Source Files\fmi\02-01-lines</Filter>
     </ClCompile>
-    <ClCompile Include="src\fmi\02-01-lines\LineLoop..cpp">
+    <ClCompile Include="src\fmi\02-01-lines\LineLoop.cpp">
       <Filter>Source Files\fmi\02-01-lines</Filter>
     </ClCompile>
     <ClCompile Include="src\fmi\02-01-lines\Lines.cpp">

@@ -180,7 +180,7 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <ClCompile Include="src\fmi\01-01-square\square-app.cpp" />
     <ClCompile Include="src\fmi\01-01-square\square.cpp" />
     <ClCompile Include="src\fmi\02-01-lines\LineApp.cpp" />
-    <ClCompile Include="src\fmi\02-01-lines\LineLoop..cpp" />
+    <ClCompile Include="src\fmi\02-01-lines\LineLoop.cpp" />
     <ClCompile Include="src\fmi\02-01-lines\Lines.cpp" />
     <ClCompile Include="src\fmi\02-01-lines\LineStrip.cpp" />
     <ClCompile Include="src\fmi\02-01-lines\Points.cpp" />

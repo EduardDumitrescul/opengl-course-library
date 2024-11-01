@@ -7,6 +7,7 @@
 #include <string>
 #include "fmi/02-01-lines/Points.h"
 #include "fmi/02-01-lines/Lines.h"
+#include "fmi/02-01-lines/LineLoop.h"
 #include "fmi/Shader.h"
 
 class LineApp {
@@ -20,6 +21,7 @@ private:
 	Shader* shader = nullptr;
 	Points* points = nullptr;
 	Lines* lines = nullptr;
+	LineLoop* lineLoop = nullptr;
 
 	void initialize();
 	static void renderFunction();
