@@ -26,6 +26,7 @@ void LineApp::initialize()
 	points = new Points(shader);
 	lines = new Lines(shader);
 	lineLoop = new LineLoop(shader);
+	lineStrip = new LineStrip(shader);
 }
 
 void LineApp::renderFunction()
@@ -35,6 +36,7 @@ void LineApp::renderFunction()
 	instance->points->render();
 	instance->lines->render();
 	instance->lineLoop->render();
+	instance->lineStrip->render();
 
 	glFlush();
 }
