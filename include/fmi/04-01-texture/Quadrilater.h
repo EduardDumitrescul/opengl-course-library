@@ -19,8 +19,19 @@ private:
 		0.5f, -0.5f, 0.0f, 1.0f, 0.2f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
 	};
 
+	float changeSpeed = 1e-4;
+	float targetVertices[8] = {
+		0.5f, 0.5,
+		-0.5f, 0.5f,
+		-0.5f, -0.5f,
+		0.5f, -0.5f
+	};
+
+	float random();
+
 public:
 	Quadrilater(Shader* shader, Texture* texture);
+	void update();
 	void render();
 	void cleanup();
 };

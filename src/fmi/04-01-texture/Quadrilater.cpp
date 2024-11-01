@@ -1,4 +1,10 @@
 #include "fmi/04-01-texture/Quadrilater.h"
+#include <iostream>
+
+float Quadrilater::random()
+{
+	return ((double)rand() / (RAND_MAX));
+}
 
 Quadrilater::Quadrilater(Shader* shader, Texture* texture)
 {
@@ -25,6 +31,35 @@ Quadrilater::Quadrilater(Shader* shader, Texture* texture)
 	glEnableVertexAttribArray(2);
 	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 10 * sizeof(float), (void*)(8 * sizeof(float)));
 
+}
+
+void Quadrilater::update()
+{
+	bool reachedTarget = false;
+	for (int i = 0; i < 4; i++) {
+		if (abs(vertices[10 * i] - targetVertices[2 * i]) < changeSpeed and abs(vertices[10 * i + 1] - targetVertices[2 * i + 1]) < changeSpeed) {
+			reachedTarget = true;
+		}
+	}
+	if (reachedTarget) {
+		for (int i = 0; i < 4; i++) {
+			targetVertices[2 * i] = random() * (i == 0 or i == 3) - random() * (i == 1 or i == 2);
+			targetVertices[2 * i + 1] = random() * (i == 0 or i == 1) - random() * (i == 2 or i == 3);
+		}
+	}
+
+	for (int i = 0; i < 4; i++) {
+		vertices[10 * i] = vertices[10 * i]
+			+ changeSpeed * (vertices[10 * i] < targetVertices[2 * i])
+			- changeSpeed * (vertices[10 * i] > targetVertices[2 * i]);
+		vertices[10 * i + 1] = vertices[10 * i + 1]
+			+ changeSpeed * (vertices[10 * i + 1] < targetVertices[2 * i + 1])
+			- changeSpeed * (vertices[10 * i + 1] > targetVertices[2 * i + 1]);
+		
+	}
+
+	glBindBuffer(GL_ARRAY_BUFFER, vboId);
+	glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(vertices), vertices);
 }
 
 void Quadrilater::render()

@@ -20,6 +20,12 @@ void TextureApp::run(int argc, char* argv[])
 	glutMainLoop();
 }
 
+void TextureApp::timer(int value) {
+	// Schedule the next frame
+	glutPostRedisplay();
+	glutTimerFunc(100, timer, 0);
+}
+
 void TextureApp::initialize()
 {
 	shader = new Shader("shaders/04-01-texture/quadrilater.vert", "shaders/04-01-texture/quadrilater.frag");
@@ -29,9 +35,11 @@ void TextureApp::initialize()
 
 void TextureApp::renderFunction()
 {
+	instance->quadrilater->update();
 	glClear(GL_COLOR_BUFFER_BIT);
 	instance->quadrilater->render();
 
+	glutPostRedisplay();
 	glFlush();
 }
 
