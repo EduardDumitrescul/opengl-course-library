@@ -36,19 +36,19 @@ Quadrilater::Quadrilater(Shader* shader, Texture* texture)
 void Quadrilater::update()
 {
 	bool reachedTarget = false;
-	for (int i = 0; i < 4; i++) {
+	for (int i = 0; i < 1; i++) {
 		if (abs(vertices[10 * i] - targetVertices[2 * i]) < changeSpeed and abs(vertices[10 * i + 1] - targetVertices[2 * i + 1]) < changeSpeed) {
 			reachedTarget = true;
 		}
 	}
 	if (reachedTarget) {
-		for (int i = 0; i < 4; i++) {
+		for (int i = 0; i < 1; i++) {
 			targetVertices[2 * i] = random() * (i == 0 or i == 3) - random() * (i == 1 or i == 2);
 			targetVertices[2 * i + 1] = random() * (i == 0 or i == 1) - random() * (i == 2 or i == 3);
 		}
 	}
 
-	for (int i = 0; i < 4; i++) {
+	for (int i = 0; i < 1; i++) {
 		vertices[10 * i] = vertices[10 * i]
 			+ changeSpeed * (vertices[10 * i] < targetVertices[2 * i])
 			- changeSpeed * (vertices[10 * i] > targetVertices[2 * i]);

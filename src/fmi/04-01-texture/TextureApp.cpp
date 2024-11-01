@@ -29,7 +29,7 @@ void TextureApp::timer(int value) {
 void TextureApp::initialize()
 {
 	shader = new Shader("shaders/04-01-texture/quadrilater.vert", "shaders/04-01-texture/quadrilater.frag");
-	texture = new Texture("textures/04-01-texture/checkerboard.png");
+	texture = new Texture("textures/04-01-texture/square.png");
 	quadrilater = new Quadrilater(shader, texture);
 }
 
