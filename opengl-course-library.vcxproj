@@ -183,7 +183,12 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <ClCompile Include="src\fmi\02-01-lines\LineLoop.cpp" />
     <ClCompile Include="src\fmi\02-01-lines\Lines.cpp" />
     <ClCompile Include="src\fmi\02-01-lines\LineStrip.cpp" />
-    <ClCompile Include="src\fmi\02-01-lines\Points.cpp" />
+    <ClCompile Include="src\fmi\02-01-lines\LinePoints.cpp" />
+    <ClCompile Include="src\fmi\02-02-triangles\TrianglePoints.cpp" />
+    <ClCompile Include="src\fmi\02-02-triangles\TriangleApp.cpp" />
+    <ClCompile Include="src\fmi\02-02-triangles\TriangleFan.cpp" />
+    <ClCompile Include="src\fmi\02-02-triangles\Triangles.cpp" />
+    <ClCompile Include="src\fmi\02-02-triangles\TriangleStrip.cpp" />
     <ClCompile Include="src\fmi\Shader.cpp" />
     <ClCompile Include="src\fmi\Texture.cpp" />
     <ClCompile Include="src\glad.c" />
@@ -197,7 +202,12 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <ClInclude Include="include\fmi\02-01-lines\LineLoop.h" />
     <ClInclude Include="include\fmi\02-01-lines\Lines.h" />
     <ClInclude Include="include\fmi\02-01-lines\LineStrip.h" />
-    <ClInclude Include="include\fmi\02-01-lines\Points.h" />
+    <ClInclude Include="include\fmi\02-01-lines\LinePoints.h" />
+    <ClInclude Include="include\fmi\02-02-triangles\TrianglePoints.h" />
+    <ClInclude Include="include\fmi\02-02-triangles\Triangles.h" />
+    <ClInclude Include="include\fmi\02-02-triangles\TriangleApp.h" />
+    <ClInclude Include="include\fmi\02-02-triangles\TriangleFan.h" />
+    <ClInclude Include="include\fmi\02-02-triangles\TriangleStrip.h" />
     <ClInclude Include="include\fmi\Shader.h" />
     <ClInclude Include="include\fmi\Texture.h" />
     <ClInclude Include="include\glad\glad.h" />
@@ -504,6 +514,8 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
   <ItemGroup>
     <None Include="shaders\02-01-lines\lines.frag" />
     <None Include="shaders\02-01-lines\lines.vert" />
+    <None Include="shaders\02-02-triangles\triangles.frag" />
+    <None Include="shaders\02-02-triangles\triangles.vert" />
     <None Include="square.frag" />
     <None Include="square.vert" />
     <None Include="include\glm\detail\func_common.inl" />

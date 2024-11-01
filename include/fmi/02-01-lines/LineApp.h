@@ -5,7 +5,7 @@
 #include <GL/glew.h> // glew apare inainte de freeglut
 #include <GL/freeglut.h>
 #include <string>
-#include "fmi/02-01-lines/Points.h"
+#include "fmi/02-01-lines/LinePoints.h"
 #include "fmi/02-01-lines/Lines.h"
 #include "fmi/02-01-lines/LineLoop.h"
 #include "fmi/02-01-lines/LineStrip.h"
@@ -20,7 +20,7 @@ private:
 	std::string windowTitle = "Moduri pentru desenarea liniilor";
 
 	Shader* shader = nullptr;
-	Points* points = nullptr;
+	LinePoints* points = nullptr;
 	Lines* lines = nullptr;
 	LineLoop* lineLoop = nullptr;
 	LineStrip* lineStrip = nullptr;

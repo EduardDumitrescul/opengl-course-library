@@ -109,6 +109,15 @@
     <Filter Include="Resource Files\shaders\02-01-lines">
       <UniqueIdentifier>{8cea669e-20f1-417a-8056-8bd4d4d882f9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\fmi\02-02-triangles">
+      <UniqueIdentifier>{5bf25618-8821-4ee6-8692-0ec150f8f563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\02-02-triangles">
+      <UniqueIdentifier>{1b10b2d1-7ad9-41e4-88e2-56b13e76f475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fmi\02-02-triangles">
+      <UniqueIdentifier>{b4bd634c-2d19-410e-be5a-da255204fc44}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -150,8 +159,23 @@
     <ClCompile Include="src\fmi\02-01-lines\LineStrip.cpp">
       <Filter>Source Files\fmi\02-01-lines</Filter>
     </ClCompile>
-    <ClCompile Include="src\fmi\02-01-lines\Points.cpp">
+    <ClCompile Include="src\fmi\02-01-lines\LinePoints.cpp">
       <Filter>Source Files\fmi\02-01-lines</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\02-02-triangles\TrianglePoints.cpp">
+      <Filter>Source Files\fmi\02-02-triangles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\02-02-triangles\TriangleApp.cpp">
+      <Filter>Source Files\fmi\02-02-triangles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\02-02-triangles\TriangleFan.cpp">
+      <Filter>Source Files\fmi\02-02-triangles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\02-02-triangles\Triangles.cpp">
+      <Filter>Source Files\fmi\02-02-triangles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\02-02-triangles\TriangleStrip.cpp">
+      <Filter>Source Files\fmi\02-02-triangles</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1070,8 +1094,23 @@
     <ClInclude Include="include\fmi\02-01-lines\LineStrip.h">
       <Filter>Header Files\fmi\02-01-lines</Filter>
     </ClInclude>
-    <ClInclude Include="include\fmi\02-01-lines\Points.h">
+    <ClInclude Include="include\fmi\02-01-lines\LinePoints.h">
       <Filter>Header Files\fmi\02-01-lines</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fmi\02-02-triangles\TrianglePoints.h">
+      <Filter>Header Files\fmi\02-02-triangles</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fmi\02-02-triangles\Triangles.h">
+      <Filter>Header Files\fmi\02-02-triangles</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fmi\02-02-triangles\TriangleApp.h">
+      <Filter>Header Files\fmi\02-02-triangles</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fmi\02-02-triangles\TriangleFan.h">
+      <Filter>Header Files\fmi\02-02-triangles</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fmi\02-02-triangles\TriangleStrip.h">
+      <Filter>Header Files\fmi\02-02-triangles</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1559,6 +1598,12 @@
     </None>
     <None Include="shaders\02-01-lines\lines.vert">
       <Filter>Resource Files\shaders\02-01-lines</Filter>
+    </None>
+    <None Include="shaders\02-02-triangles\triangles.frag">
+      <Filter>Resource Files\shaders\02-02-triangles</Filter>
+    </None>
+    <None Include="shaders\02-02-triangles\triangles.vert">
+      <Filter>Resource Files\shaders\02-02-triangles</Filter>
     </None>
   </ItemGroup>
 </Project>

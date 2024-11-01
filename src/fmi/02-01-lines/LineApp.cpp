@@ -23,7 +23,7 @@ void LineApp::run(int argc, char* argv[])
 void LineApp::initialize()
 {
 	shader = new Shader("shaders/02-01-lines/lines.vert", "shaders/02-01-lines/lines.frag");
-	points = new Points(shader);
+	points = new LinePoints(shader);
 	lines = new Lines(shader);
 	lineLoop = new LineLoop(shader);
 	lineStrip = new LineStrip(shader);
