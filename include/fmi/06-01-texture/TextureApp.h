@@ -7,7 +7,7 @@
 #include <string>
 #include "fmi/Shader.h"
 #include "fmi/Texture.h"
-#include "fmi/04-01-texture/Quadrilater.h"
+#include "fmi/06-01-texture/Quadrilater.h"
 
 class TextureApp {
 private:

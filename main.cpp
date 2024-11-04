@@ -3,7 +3,7 @@
 #include "fmi/01-01-square/square-app.h"
 #include "fmi/02-01-lines/LineApp.h"
 #include "fmi/02-02-triangles/TriangleApp.h"
-#include "fmi/04-01-texture/TextureApp.h"
+#include "fmi/06-01-texture/TextureApp.h"
 
 int main(int argc, char* argv[]) {
 	//SquareApp* squareApp = SquareApp::getInstance();

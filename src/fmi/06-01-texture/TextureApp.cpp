@@ -1,4 +1,4 @@
-#include "fmi/04-01-texture/TextureApp.h"
+#include "fmi/06-01-texture/TextureApp.h"
 
 TextureApp* TextureApp::instance = nullptr;
 
@@ -28,8 +28,8 @@ void TextureApp::timer(int value) {
 
 void TextureApp::initialize()
 {
-	shader = new Shader("shaders/04-01-texture/quadrilater.vert", "shaders/04-01-texture/quadrilater.frag");
-	texture = new Texture("textures/04-01-texture/square.png");
+	shader = new Shader("shaders/06-01-texture/quadrilater.vert", "shaders/06-01-texture/quadrilater.frag");
+	texture = new Texture("textures/06-01-texture/square.png");
 	quadrilater = new Quadrilater(shader, texture);
 }
 

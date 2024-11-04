@@ -1,4 +1,4 @@
-#include "fmi/04-01-texture/Quadrilater.h"
+#include "fmi/06-01-texture/Quadrilater.h"
 #include <iostream>
 
 float Quadrilater::random()
@@ -77,5 +77,13 @@ void Quadrilater::render()
 
 void Quadrilater::cleanup()
 {
-	
+	glDisableVertexAttribArray(2);
+	glDisableVertexAttribArray(1);
+	glDisableVertexAttribArray(0);
+
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glDeleteBuffers(1, &vboId);
+
+	glBindVertexArray(0);
+	glDeleteVertexArrays(1, &vaoId);
 }

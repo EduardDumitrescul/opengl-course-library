@@ -118,16 +118,16 @@
     <Filter Include="Source Files\fmi\02-02-triangles">
       <UniqueIdentifier>{b4bd634c-2d19-410e-be5a-da255204fc44}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\shaders\04-01-texture">
-      <UniqueIdentifier>{5ca3991d-d20c-4b20-84db-3e4a7bdc90a0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\fmi\04-01-texture">
+    <Filter Include="Header Files\fmi\06-01-texture">
       <UniqueIdentifier>{00fa0605-02c5-4524-8abb-09d0f6ea7eff}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\textures\04-01-texture">
+    <Filter Include="Resource Files\shaders\06-01-texture">
+      <UniqueIdentifier>{5ca3991d-d20c-4b20-84db-3e4a7bdc90a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\textures\06-01-texture">
       <UniqueIdentifier>{4ac98e3c-b0b9-4fce-af41-a78f0533563e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\fmi\04-01-texture">
+    <Filter Include="Source Files\fmi\06-01-texture">
       <UniqueIdentifier>{814fd8b0-f549-4ff0-ac4a-f8ea323bf0a4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -189,14 +189,14 @@
     <ClCompile Include="src\fmi\02-02-triangles\TriangleStrip.cpp">
       <Filter>Source Files\fmi\02-02-triangles</Filter>
     </ClCompile>
-    <ClCompile Include="src\fmi\04-01-texture\Quadrilater.cpp">
-      <Filter>Source Files\fmi\04-01-texture</Filter>
-    </ClCompile>
-    <ClCompile Include="src\fmi\04-01-texture\TextureApp.cpp">
-      <Filter>Source Files\fmi\04-01-texture</Filter>
-    </ClCompile>
     <ClCompile Include="src\fmi\App.cpp">
       <Filter>Source Files\fmi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\06-01-texture\Quadrilater.cpp">
+      <Filter>Source Files\fmi\06-01-texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\06-01-texture\TextureApp.cpp">
+      <Filter>Source Files\fmi\06-01-texture</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1133,14 +1133,14 @@
     <ClInclude Include="include\fmi\02-02-triangles\TriangleStrip.h">
       <Filter>Header Files\fmi\02-02-triangles</Filter>
     </ClInclude>
-    <ClInclude Include="include\fmi\04-01-texture\Quadrilater.h">
-      <Filter>Header Files\fmi\04-01-texture</Filter>
-    </ClInclude>
-    <ClInclude Include="include\fmi\04-01-texture\TextureApp.h">
-      <Filter>Header Files\fmi\04-01-texture</Filter>
-    </ClInclude>
     <ClInclude Include="include\fmi\App.h">
       <Filter>Header Files\fmi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fmi\06-01-texture\Quadrilater.h">
+      <Filter>Header Files\fmi\06-01-texture</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fmi\06-01-texture\TextureApp.h">
+      <Filter>Header Files\fmi\06-01-texture</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1635,19 +1635,19 @@
     <None Include="shaders\02-02-triangles\triangles.vert">
       <Filter>Resource Files\shaders\02-02-triangles</Filter>
     </None>
-    <None Include="shaders\04-01-texture\quadrilater.frag">
-      <Filter>Resource Files\shaders\04-01-texture</Filter>
+    <None Include="shaders\06-01-texture\quadrilater.frag">
+      <Filter>Resource Files\shaders\06-01-texture</Filter>
     </None>
-    <None Include="shaders\04-01-texture\quadrilater.vert">
-      <Filter>Resource Files\shaders\04-01-texture</Filter>
+    <None Include="shaders\06-01-texture\quadrilater.vert">
+      <Filter>Resource Files\shaders\06-01-texture</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="textures\04-01-texture\checkerboard.jpg">
-      <Filter>Resource Files\textures\04-01-texture</Filter>
+    <Image Include="textures\06-01-texture\checkerboard.png">
+      <Filter>Resource Files\textures\06-01-texture</Filter>
     </Image>
-    <Image Include="textures\04-01-texture\player.jpg">
-      <Filter>Resource Files\textures\04-01-texture</Filter>
+    <Image Include="textures\06-01-texture\square.png">
+      <Filter>Resource Files\textures\06-01-texture</Filter>
     </Image>
   </ItemGroup>
 </Project>
