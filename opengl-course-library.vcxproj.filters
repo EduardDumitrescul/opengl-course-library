@@ -130,6 +130,15 @@
     <Filter Include="Source Files\fmi\06-01-texture">
       <UniqueIdentifier>{814fd8b0-f549-4ff0-ac4a-f8ea323bf0a4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\fmi\05-01-star">
+      <UniqueIdentifier>{cdea0ca4-34eb-4afb-9fd8-202b8c4cda47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\05-01-star">
+      <UniqueIdentifier>{8e5cd2a5-1832-4742-9ad4-21e8094a3f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fmi\05-01-star">
+      <UniqueIdentifier>{f6058ab4-9bf0-4b75-b33e-b3f6605fa23e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -197,6 +206,12 @@
     </ClCompile>
     <ClCompile Include="src\fmi\06-01-texture\TextureApp.cpp">
       <Filter>Source Files\fmi\06-01-texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\05-01-star\Star.cpp">
+      <Filter>Source Files\fmi\05-01-star</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\05-01-star\StarApp.cpp">
+      <Filter>Source Files\fmi\05-01-star</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1142,6 +1157,12 @@
     <ClInclude Include="include\fmi\06-01-texture\TextureApp.h">
       <Filter>Header Files\fmi\06-01-texture</Filter>
     </ClInclude>
+    <ClInclude Include="include\fmi\05-01-star\Star.h">
+      <Filter>Header Files\fmi\05-01-star</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fmi\05-01-star\StarApp.h">
+      <Filter>Header Files\fmi\05-01-star</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="include\glm\CMakeLists.txt">
@@ -1640,6 +1661,12 @@
     </None>
     <None Include="shaders\06-01-texture\quadrilater.vert">
       <Filter>Resource Files\shaders\06-01-texture</Filter>
+    </None>
+    <None Include="shaders\05-01-star\star.frag">
+      <Filter>Resource Files\shaders\05-01-star</Filter>
+    </None>
+    <None Include="shaders\05-01-star\star.vert">
+      <Filter>Resource Files\shaders\05-01-star</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
