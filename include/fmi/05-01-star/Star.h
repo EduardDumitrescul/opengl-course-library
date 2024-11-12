@@ -23,8 +23,15 @@ private:
 		0, 100, 0, 1, 1, 1, 0, 1,
 	};
 
+	float c4 = 1;
+	float speed = 0.0004;
+	bool increase = true;
+
 public:
 	Star();
+	void update();
 	void render();
 	void cleanup();
+
+	float getCoord4();
 };

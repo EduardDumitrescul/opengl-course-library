@@ -17,6 +17,7 @@ void StarApp::run(int argc, char* argv[])
 
 	glutDisplayFunc(renderFunction);
 	glutCloseFunc(cleanup);
+	//glutTimerFunc(timer);
 	glutMainLoop();
 }
 
@@ -33,9 +34,14 @@ void StarApp::renderFunction()
 
 	instance->shader->use();
 	instance->shader->setMat4("viewMatrix", instance->viewMatrix);
+	//float c4 = 1.5;
+	float c4 = instance->star->getCoord4();
+	instance->shader->setFloat("c4", c4);
+	instance->star->update();
 	instance->star->render();
 	instance->shader->remove();
 
+	glutPostRedisplay();
 	glFlush();
 }
 

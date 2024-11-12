@@ -26,6 +26,7 @@ private:
 	glm::mat4 viewMatrix;
 
 	void initialize();
+	static void timer(int value);
 	static void renderFunction();
 	static void cleanup();
 public:

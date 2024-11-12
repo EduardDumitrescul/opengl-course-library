@@ -20,6 +20,23 @@ Star::Star()
 
 }
 
+void Star::update() {
+	if (increase) {
+		c4 += speed;
+		if (c4 > 2) {
+			c4 -= 2*speed;
+			increase = false;
+		}
+	}
+	else {
+		c4 -= speed;
+		if (c4 < 0) {
+			c4 += 2 * speed;
+			increase = true;
+		}
+	}
+}
+
 void Star::render()
 {
 	glBindVertexArray(vaoId);
@@ -40,4 +57,8 @@ void Star::cleanup()
 
 	glBindVertexArray(0);
 	glDeleteVertexArrays(1, &vaoId);
+}
+
+float Star::getCoord4() {
+	return c4;
 }
