@@ -189,6 +189,8 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <ClCompile Include="src\fmi\02-02-triangles\TriangleFan.cpp" />
     <ClCompile Include="src\fmi\02-02-triangles\Triangles.cpp" />
     <ClCompile Include="src\fmi\02-02-triangles\TriangleStrip.cpp" />
+    <ClCompile Include="src\fmi\04-01-transform\TransformApp.cpp" />
+    <ClCompile Include="src\fmi\04-01-transform\TransformObj.cpp" />
     <ClCompile Include="src\fmi\05-01-star\Star.cpp" />
     <ClCompile Include="src\fmi\05-01-star\StarApp.cpp" />
     <ClCompile Include="src\fmi\06-01-texture\Quadrilater.cpp" />
@@ -213,6 +215,8 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <ClInclude Include="include\fmi\02-02-triangles\TriangleApp.h" />
     <ClInclude Include="include\fmi\02-02-triangles\TriangleFan.h" />
     <ClInclude Include="include\fmi\02-02-triangles\TriangleStrip.h" />
+    <ClInclude Include="include\fmi\04-01-transform\TransformApp.h" />
+    <ClInclude Include="include\fmi\04-01-transform\TransformObj.h" />
     <ClInclude Include="include\fmi\05-01-star\Star.h" />
     <ClInclude Include="include\fmi\05-01-star\StarApp.h" />
     <ClInclude Include="include\fmi\06-01-texture\Quadrilater.h" />
@@ -526,6 +530,8 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <None Include="shaders\02-01-lines\lines.vert" />
     <None Include="shaders\02-02-triangles\triangles.frag" />
     <None Include="shaders\02-02-triangles\triangles.vert" />
+    <None Include="shaders\04-01-transform\transform.frag" />
+    <None Include="shaders\04-01-transform\transform.vert" />
     <None Include="shaders\05-01-star\star.frag" />
     <None Include="shaders\05-01-star\star.vert" />
     <None Include="shaders\06-01-texture\quadrilater.frag" />

@@ -5,6 +5,7 @@
 #include "fmi/02-02-triangles/TriangleApp.h"
 #include "fmi/06-01-texture/TextureApp.h"
 #include "fmi/05-01-star/StarApp.h"
+#include "fmi/04-01-transform/TransformApp.h"
 
 int main(int argc, char* argv[]) {
 	//SquareApp* squareApp = SquareApp::getInstance();
@@ -18,6 +19,8 @@ int main(int argc, char* argv[]) {
 
 	//TextureApp::getInstance()->run(argc, argv);
 
-	StarApp::getInstance()->run(argc, argv);
+	//StarApp::getInstance()->run(argc, argv);
+
+	TransformApp::getInstance()->run(argc, argv);
 }
 

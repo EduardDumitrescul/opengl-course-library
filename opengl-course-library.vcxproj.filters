@@ -139,6 +139,15 @@
     <Filter Include="Source Files\fmi\05-01-star">
       <UniqueIdentifier>{f6058ab4-9bf0-4b75-b33e-b3f6605fa23e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\fmi\04-01-transform">
+      <UniqueIdentifier>{63b9222e-c3d6-4681-ad91-beb88ba1005d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\04-01-transform">
+      <UniqueIdentifier>{c6917358-6786-47c0-8772-8541df44e75c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fmi\04-01-transform">
+      <UniqueIdentifier>{e36f4992-4728-40a4-b704-46566215cc57}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -212,6 +221,12 @@
     </ClCompile>
     <ClCompile Include="src\fmi\05-01-star\StarApp.cpp">
       <Filter>Source Files\fmi\05-01-star</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\04-01-transform\TransformApp.cpp">
+      <Filter>Source Files\fmi\04-01-transform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fmi\04-01-transform\TransformObj.cpp">
+      <Filter>Source Files\fmi\04-01-transform</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1163,6 +1178,12 @@
     <ClInclude Include="include\fmi\05-01-star\StarApp.h">
       <Filter>Header Files\fmi\05-01-star</Filter>
     </ClInclude>
+    <ClInclude Include="include\fmi\04-01-transform\TransformApp.h">
+      <Filter>Header Files\fmi\04-01-transform</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fmi\04-01-transform\TransformObj.h">
+      <Filter>Header Files\fmi\04-01-transform</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="include\glm\CMakeLists.txt">
@@ -1667,6 +1688,12 @@
     </None>
     <None Include="shaders\05-01-star\star.vert">
       <Filter>Resource Files\shaders\05-01-star</Filter>
+    </None>
+    <None Include="shaders\04-01-transform\transform.frag">
+      <Filter>Resource Files\shaders\04-01-transform</Filter>
+    </None>
+    <None Include="shaders\04-01-transform\transform.vert">
+      <Filter>Resource Files\shaders\04-01-transform</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
