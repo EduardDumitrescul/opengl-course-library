@@ -13,6 +13,8 @@
 ### Curs 3 - fata poligoanelor
 ### Curs 4 - transformari
 ### Curs 5 - transformari 2
+- animatie: o stea ale carei varfuri au a 4-a coordonata in intervalul [0,2]
+- [documentatie curs 5](/documentation/curs5.md)
 ### Curs 6 - texturare
 - animatie: aplicarea unei texturi pe un patrulater neregulat
 - [documentatie curs 6](/documentation/curs6.md)
