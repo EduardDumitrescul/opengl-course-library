@@ -6,9 +6,8 @@ float Quadrilater::random()
 	return ((double)rand() / (RAND_MAX));
 }
 
-Quadrilater::Quadrilater(Shader* shader, Texture* texture)
+Quadrilater::Quadrilater(Texture* texture)
 {
-	this->shader = shader;
 	this->texture = texture;
 
 	glGenVertexArrays(1, &vaoId);
@@ -65,14 +64,11 @@ void Quadrilater::update()
 void Quadrilater::render()
 {
 	glBindVertexArray(vaoId);
-	shader->use();
 	texture->use();
 
 	glPointSize(5);
 	glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
 	glDrawArrays(GL_POINTS, 0, 4);
-
-	shader->remove();
 }
 
 void Quadrilater::cleanup()

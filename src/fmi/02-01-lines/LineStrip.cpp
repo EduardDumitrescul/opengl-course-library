@@ -1,9 +1,7 @@
 #include "fmi/02-01-lines/LineStrip.h"
 
-LineStrip::LineStrip(Shader* shader)
+LineStrip::LineStrip()
 {
-	this->shader = shader;
-
 	glGenVertexArrays(1, &vaoId);
 	glBindVertexArray(vaoId);
 
@@ -26,10 +24,8 @@ LineStrip::LineStrip(Shader* shader)
 void LineStrip::render()
 {
 	glBindVertexArray(this->vaoId);
-	shader->use();
 	glLineWidth(10);
 	glDrawArrays(GL_LINE_STRIP, 0, 4);
-	shader->remove();
 }
 
 void LineStrip::cleanup()

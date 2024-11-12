@@ -1,9 +1,7 @@
 #include "fmi/02-01-lines/LinePoints.h"
 
-LinePoints::LinePoints(Shader* shader)
+LinePoints::LinePoints()
 {
-	this->shader = shader;
-
 	glGenVertexArrays(1, &vaoId);
 	glBindVertexArray(vaoId);
 
@@ -26,10 +24,8 @@ LinePoints::LinePoints(Shader* shader)
 void LinePoints::render()
 {
 	glBindVertexArray(this->vaoId);
-	shader->use();
 	glPointSize(10);
 	glDrawArrays(GL_POINTS, 0, 4);
-	shader->remove();
 }
 
 void LinePoints::cleanup()

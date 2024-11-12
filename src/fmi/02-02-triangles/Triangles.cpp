@@ -1,9 +1,7 @@
 #include "fmi/02-02-triangles/Triangles.h"
 
-Triangles::Triangles(Shader* shader)
+Triangles::Triangles()
 {
-	this->shader = shader;
-
 	glGenVertexArrays(1, &vaoId);
 	glBindVertexArray(vaoId);
 
@@ -26,12 +24,10 @@ Triangles::Triangles(Shader* shader)
 void Triangles::render()
 {
 	glBindVertexArray(this->vaoId);
-	shader->use();
 	glPointSize(10);
 	glLineWidth(10);
 	glDrawArrays(GL_TRIANGLES, 0, 6);
 	glDrawArrays(GL_POINTS, 0, 6);
-	shader->remove();
 }
 
 void Triangles::cleanup()

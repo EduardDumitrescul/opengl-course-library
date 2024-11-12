@@ -1,11 +1,9 @@
 #pragma once
 
-#include "fmi/Shader.h"
+#include <GL/glew.h> 
 
 class LineLoop {
 private:
-	Shader* shader = nullptr;
-
 	unsigned int vaoId;
 
 	unsigned int verticesVboId;
@@ -24,7 +22,7 @@ private:
 		0.0f, 0.0f, 0.0f, 1.0f,
 	};
 public:
-	LineLoop(Shader* shader);
+	LineLoop();
 
 	void render();
 	void cleanup();

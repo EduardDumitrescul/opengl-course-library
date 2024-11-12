@@ -1,9 +1,7 @@
 #include "fmi/02-01-lines/Lines.h"
 
-Lines::Lines(Shader* shader)
+Lines::Lines()
 {
-	this->shader = shader;
-
 	glGenVertexArrays(1, &vaoId);
 	glBindVertexArray(vaoId);
 
@@ -26,10 +24,8 @@ Lines::Lines(Shader* shader)
 void Lines::render()
 {
 	glBindVertexArray(this->vaoId);
-	shader->use();
 	glLineWidth(10);
 	glDrawArrays(GL_LINES, 0, 4);
-	shader->remove();
 }
 
 void Lines::cleanup()

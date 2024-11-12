@@ -1,11 +1,9 @@
 #pragma once
 
-#include "fmi/Shader.h"
+#include <GL/glew.h> 
 
 class Square {
 private:
-	Shader* shader = nullptr;
-
 	unsigned int vaoId;
 
 	unsigned int verticesVboId;
@@ -28,7 +26,7 @@ private:
 		1.0f, 0.5f, 0.2f, 1.0f,
 	};
 public:
-	Square(Shader* shader);
+	Square();
 
 	void render();
 	void cleanup();

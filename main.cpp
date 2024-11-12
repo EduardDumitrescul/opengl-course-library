@@ -6,8 +6,8 @@
 #include "fmi/06-01-texture/TextureApp.h"
 
 int main(int argc, char* argv[]) {
-	//SquareApp* squareApp = SquareApp::getInstance();
-	//squareApp->run(argc, argv);
+	SquareApp* squareApp = SquareApp::getInstance();
+	squareApp->run(argc, argv);
 
 	//LineApp* lineApp = LineApp::getInstance();
 	//lineApp->run(argc, argv);
@@ -15,6 +15,6 @@ int main(int argc, char* argv[]) {
 	//TriangleApp* triangleApp = TriangleApp::getInstance();
 	//triangleApp->run(argc, argv);
 
-	TextureApp::getInstance()->run(argc, argv);
+	//TextureApp::getInstance()->run(argc, argv);
 }
 

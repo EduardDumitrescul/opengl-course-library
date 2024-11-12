@@ -1,9 +1,7 @@
 #include "fmi/02-02-triangles/TrianglePoints.h"
 
-TrianglePoints::TrianglePoints(Shader* shader)
+TrianglePoints::TrianglePoints()
 {
-	this->shader = shader;
-
 	glGenVertexArrays(1, &vaoId);
 	glBindVertexArray(vaoId);
 
@@ -26,10 +24,8 @@ TrianglePoints::TrianglePoints(Shader* shader)
 void TrianglePoints::render()
 {
 	glBindVertexArray(this->vaoId);
-	shader->use();
 	glPointSize(10);
 	glDrawArrays(GL_POINTS, 0, 6);
-	shader->remove();
 }
 
 void TrianglePoints::cleanup()

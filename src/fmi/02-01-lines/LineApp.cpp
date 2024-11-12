@@ -23,20 +23,22 @@ void LineApp::run(int argc, char* argv[])
 void LineApp::initialize()
 {
 	shader = new Shader("shaders/02-01-lines/lines.vert", "shaders/02-01-lines/lines.frag");
-	points = new LinePoints(shader);
-	lines = new Lines(shader);
-	lineLoop = new LineLoop(shader);
-	lineStrip = new LineStrip(shader);
+	points = new LinePoints();
+	lines = new Lines();
+	lineLoop = new LineLoop();
+	lineStrip = new LineStrip();
 }
 
 void LineApp::renderFunction()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 
+	instance->shader->use();
 	instance->points->render();
 	instance->lines->render();
 	instance->lineLoop->render();
 	instance->lineStrip->render();
+	instance->shader->remove();
 
 	glFlush();
 }
@@ -44,6 +46,9 @@ void LineApp::renderFunction()
 void LineApp::cleanup()
 {
 	instance->points->cleanup();
+	instance->lines->cleanup();
+	instance->lineLoop->cleanup();
+	instance->lineStrip->cleanup();
 }
 
 LineApp* LineApp::getInstance() {

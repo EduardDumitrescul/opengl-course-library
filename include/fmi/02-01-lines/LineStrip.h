@@ -1,11 +1,9 @@
 #pragma once
 
-#include "fmi/Shader.h"
+#include <GL/glew.h> 
 
 class LineStrip {
 private:
-	Shader* shader = nullptr;
-
 	unsigned int vaoId;
 
 	unsigned int verticesVboId;
@@ -24,7 +22,7 @@ private:
 		0.0f, 0.0f, 0.0f, 1.0f,
 	};
 public:
-	LineStrip(Shader* shader);
+	LineStrip();
 
 	void render();
 	void cleanup();

@@ -1,11 +1,9 @@
 #pragma once
 
-#include "fmi/Shader.h"
+#include <GL/glew.h> 
 
 class Lines {
 private:
-	Shader* shader = nullptr;
-
 	unsigned int vaoId;
 
 	unsigned int verticesVboId;
@@ -24,7 +22,7 @@ private:
 		0.0f, 0.0f, 0.0f, 1.0f,
 	};
 public:
-	Lines(Shader* shader);
+	Lines();
 
 	void render();
 	void cleanup();

@@ -1,9 +1,7 @@
 #include "fmi/02-02-triangles/TriangleFan.h"
 
-TriangleFan::TriangleFan(Shader* shader)
+TriangleFan::TriangleFan()
 {
-	this->shader = shader;
-
 	glGenVertexArrays(1, &vaoId);
 	glBindVertexArray(vaoId);
 
@@ -26,12 +24,10 @@ TriangleFan::TriangleFan(Shader* shader)
 void TriangleFan::render()
 {
 	glBindVertexArray(this->vaoId);
-	shader->use();
 	glPointSize(10);
 	glLineWidth(10);
 	glDrawArrays(GL_TRIANGLE_FAN, 0, 6);
 	glDrawArrays(GL_POINTS, 0, 6);
-	shader->remove();
 }
 
 void TriangleFan::cleanup()

@@ -1,9 +1,7 @@
 #include "fmi/01-01-square/square.h"
 
-Square::Square(Shader* shader)
+Square::Square()
 {
-	this->shader = shader;
-
 	glGenVertexArrays(1, &vaoId);
 	glBindVertexArray(vaoId);
 
@@ -26,10 +24,8 @@ Square::Square(Shader* shader)
 void Square::render()
 {
 	glBindVertexArray(this->vaoId);
-	shader->use();
 	glDrawArrays(GL_TRIANGLES, 0, 3);
 	glDrawArrays(GL_TRIANGLES, 3, 3);
-	shader->remove();
 }
 
 void Square::cleanup()

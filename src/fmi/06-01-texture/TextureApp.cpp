@@ -30,14 +30,16 @@ void TextureApp::initialize()
 {
 	shader = new Shader("shaders/06-01-texture/quadrilater.vert", "shaders/06-01-texture/quadrilater.frag");
 	texture = new Texture("textures/06-01-texture/square.png");
-	quadrilater = new Quadrilater(shader, texture);
+	quadrilater = new Quadrilater(texture);
 }
 
 void TextureApp::renderFunction()
 {
 	instance->quadrilater->update();
 	glClear(GL_COLOR_BUFFER_BIT);
+	instance->shader->use();
 	instance->quadrilater->render();
+	instance->shader->remove();
 
 	glutPostRedisplay();
 	glFlush();

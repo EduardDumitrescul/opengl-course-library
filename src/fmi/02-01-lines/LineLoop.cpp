@@ -1,9 +1,7 @@
 #include "fmi/02-01-lines/LineLoop.h"
 
-LineLoop::LineLoop(Shader* shader)
+LineLoop::LineLoop()
 {
-	this->shader = shader;
-
 	glGenVertexArrays(1, &vaoId);
 	glBindVertexArray(vaoId);
 
@@ -26,10 +24,8 @@ LineLoop::LineLoop(Shader* shader)
 void LineLoop::render()
 {
 	glBindVertexArray(this->vaoId);
-	shader->use();
 	glLineWidth(10);
 	glDrawArrays(GL_LINE_LOOP, 0, 4);
-	shader->remove();
 }
 
 void LineLoop::cleanup()

@@ -1,9 +1,7 @@
 #include "fmi/02-02-triangles/TriangleStrip.h"
 
-TriangleStrip::TriangleStrip(Shader* shader)
+TriangleStrip::TriangleStrip()
 {
-	this->shader = shader;
-
 	glGenVertexArrays(1, &vaoId);
 	glBindVertexArray(vaoId);
 
@@ -26,12 +24,10 @@ TriangleStrip::TriangleStrip(Shader* shader)
 void TriangleStrip::render()
 {
 	glBindVertexArray(this->vaoId);
-	shader->use();
 	glPointSize(10);
 	glLineWidth(10);
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 6);
 	glDrawArrays(GL_POINTS, 0, 6);
-	shader->remove();
 }
 
 void TriangleStrip::cleanup()

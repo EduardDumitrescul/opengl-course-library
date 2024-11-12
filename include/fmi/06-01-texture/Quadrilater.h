@@ -1,11 +1,10 @@
 #pragma once
 
-#include "fmi/Shader.h"
+#include <GL/glew.h> 
 #include "fmi/Texture.h"
 
 class Quadrilater {
 private:
-	Shader* shader = nullptr;	
 	Texture* texture = nullptr;
 
 	unsigned int vaoId;
@@ -30,7 +29,7 @@ private:
 	float random();
 
 public:
-	Quadrilater(Shader* shader, Texture* texture);
+	Quadrilater(Texture* texture);
 	void update();
 	void render();
 	void cleanup();

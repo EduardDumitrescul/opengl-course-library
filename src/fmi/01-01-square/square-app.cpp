@@ -23,14 +23,16 @@ void SquareApp::run(int argc, char* argv[])
 void SquareApp::initialize()
 {
 	squareShader = new Shader("square.vert", "square.frag");
-	square = new Square(squareShader);
+	square = new Square();
 }
 
 void SquareApp::renderFunction()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 
+	instance->squareShader->use();
 	instance->square->render();
+	instance->squareShader->remove();
 
 	glFlush();
 }

@@ -23,20 +23,22 @@ void TriangleApp::run(int argc, char* argv[])
 void TriangleApp::initialize()
 {
 	shader = new Shader("shaders/02-02-triangles/triangles.vert", "shaders/02-02-triangles/triangles.frag");
-	points = new TrianglePoints(shader);
-	triangles = new Triangles(shader);
-	triangleFan = new TriangleFan(shader);
-	triangleStrip = new TriangleStrip(shader);
+	points = new TrianglePoints();
+	triangles = new Triangles();
+	triangleFan = new TriangleFan();
+	triangleStrip = new TriangleStrip();
 }
 
 void TriangleApp::renderFunction()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 
+	instance->shader->use();
 	instance->points->render();
 	instance->triangles->render();
 	instance->triangleFan->render();
 	instance->triangleStrip->render();
+	instance->shader->remove();
 
 	glFlush();
 }
@@ -44,6 +46,9 @@ void TriangleApp::renderFunction()
 void TriangleApp::cleanup()
 {
 	instance->points->cleanup();
+	instance->triangles->cleanup();
+	instance->triangleFan->cleanup();
+	instance->triangleStrip->cleanup();
 }
 
 TriangleApp* TriangleApp::getInstance() {

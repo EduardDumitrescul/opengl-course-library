@@ -1,11 +1,9 @@
 #pragma once
 
-#include "fmi/Shader.h"
+#include <GL/glew.h> 
 
 class TrianglePoints {
 private:
-	Shader* shader = nullptr;
-
 	unsigned int vaoId;
 
 	unsigned int verticesVboId;
@@ -29,7 +27,7 @@ private:
 		0.0f, 0.0f, 1.0f, 1.0f,
 	};
 public:
-	TrianglePoints(Shader* shader);
+	TrianglePoints();
 
 	void render();
 	void cleanup();
