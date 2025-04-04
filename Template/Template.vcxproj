@@ -176,6 +176,9 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="include\glm\detail\glm.cpp" />
+    <ClCompile Include="labs\lab1\01_00_test_version.cpp" />
+    <ClCompile Include="labs\lab1\01_01_varfuri_triunghi_OLD.cpp" />
+    <ClCompile Include="labs\lab1\01_02_varfuri_triunghi.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\imageloader.cpp" />
