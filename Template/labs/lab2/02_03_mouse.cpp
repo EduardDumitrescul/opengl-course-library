@@ -1,8 +1,8 @@
-//
+﻿//
 // =================================================
 // | Grafica pe calculator                         |
 // =================================================
-// | Laboratorul II - 02_03_poligoane3D.cpp |
+// | Laboratorul II - 02_03_mouse.cpp |
 // =================================================
 //
 //  Prezentul cod sursa este adaptat dupa OpenGLBook.com;

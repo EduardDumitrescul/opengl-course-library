@@ -56,6 +56,7 @@
 //
 //     void render() const
 //     {
+// 		   glBindVertexArray(vaoId);
 //         glPointSize(20.0);               
 //         glDrawArrays(GL_POINTS, 0, 3);  // De explorat si alte variante de primitive
 //  

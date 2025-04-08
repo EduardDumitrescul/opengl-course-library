@@ -179,6 +179,9 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <ClCompile Include="labs\lab1\01_00_test_version.cpp" />
     <ClCompile Include="labs\lab1\01_01_varfuri_triunghi_OLD.cpp" />
     <ClCompile Include="labs\lab1\01_02_varfuri_triunghi.cpp" />
+    <ClCompile Include="labs\lab2\02_01_primitive.cpp" />
+    <ClCompile Include="labs\lab2\02_02_fata_spate_poligon.cpp" />
+    <ClCompile Include="labs\lab2\02_03_mouse.cpp" />
     <ClCompile Include="labs\template\template.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\glad.c" />
@@ -490,8 +493,6 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <Text Include="include\glm\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="example.frag" />
-    <None Include="example.vert" />
     <None Include="include\glm\detail\func_common.inl" />
     <None Include="include\glm\detail\func_common_simd.inl" />
     <None Include="include\glm\detail\func_exponential.inl" />
@@ -628,6 +629,8 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <None Include="include\glm\gtx\vector_angle.inl" />
     <None Include="include\glm\gtx\vector_query.inl" />
     <None Include="include\glm\gtx\wrap.inl" />
+    <None Include="labs\template\example.frag" />
+    <None Include="labs\template\example.vert" />
     <None Include="lib\x32\GLFW\DLLs\glfw3.dll" />
     <None Include="lib\x32\GLFW\glfw3.dll" />
     <None Include="lib\x32\GLFW\glfw3dll.dll" />
@@ -648,6 +651,14 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <None Include="lib\x64\GL\glew32.dll" />
     <None Include="lib\x64\GL\glew32s.dll" />
     <None Include="lib\x64\SOIL\SOIL.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="labs\lab2\02_01_Shader.frag" />
+    <Content Include="labs\lab2\02_01_Shader.vert" />
+    <Content Include="labs\lab2\02_02_Shader.frag" />
+    <Content Include="labs\lab2\02_02_Shader.vert" />
+    <Content Include="labs\lab2\02_03_Shader.frag" />
+    <Content Include="labs\lab2\02_03_Shader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
