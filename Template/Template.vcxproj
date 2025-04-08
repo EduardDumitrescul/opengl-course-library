@@ -182,6 +182,11 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <ClCompile Include="labs\lab2\02_01_primitive.cpp" />
     <ClCompile Include="labs\lab2\02_02_fata_spate_poligon.cpp" />
     <ClCompile Include="labs\lab2\02_03_mouse.cpp" />
+    <ClCompile Include="labs\lab3\03_01_animatie_OLD.cpp" />
+    <ClCompile Include="labs\lab3\03_02_animatie.cpp" />
+    <ClCompile Include="labs\lab3\03_03_resize.cpp" />
+    <ClCompile Include="labs\lab3\03_04_rotire.cpp" />
+    <ClCompile Include="labs\lab3\03_05_keyboard.cpp" />
     <ClCompile Include="labs\template\template.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\glad.c" />
@@ -659,6 +664,14 @@ xcopy /y /d "$(ProjectDir)lib\x64\SOIL\*.dll" "$(OutDir)" &amp;</Command>
     <Content Include="labs\lab2\02_02_Shader.vert" />
     <Content Include="labs\lab2\02_03_Shader.frag" />
     <Content Include="labs\lab2\02_03_Shader.vert" />
+    <Content Include="labs\lab3\03_02_Shader.frag" />
+    <Content Include="labs\lab3\03_02_Shader.vert" />
+    <Content Include="labs\lab3\03_03_Shader.frag" />
+    <Content Include="labs\lab3\03_03_Shader.vert" />
+    <Content Include="labs\lab3\03_04_Shader.frag" />
+    <Content Include="labs\lab3\03_04_Shader.vert" />
+    <Content Include="labs\lab3\03_05_Shader.frag" />
+    <Content Include="labs\lab3\03_05_Shader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
